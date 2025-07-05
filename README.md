@@ -16,7 +16,7 @@ Crafted by **Stephen William G. De Jesus**, this project showcases clean UI prin
 ---
 
 ## 🌐 Live Demo  
-[View Live Demo](https://bogiiiie.github.io/06-tailwindcss-profile-card/)
+[View Live Demo](https://bogiiiie.github.io/06-tailwind-profile-card/)
 
 ---
 
