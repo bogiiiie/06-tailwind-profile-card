@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Stephen William G. De Jesus" />
+    <meta name="description"
+        content="A responsive and accessible profile card designed using Tailwind CSS. Showcasing the work of Stephen William G. De Jesus, a Senior UX Designer passionate about intuitive digital experiences." />
+    <meta name="keywords"
+        content="Tailwind CSS, Profile Card, UX Designer, Responsive Design, Stephen William G. De Jesus" />
+    <title>Stephen William G. De Jesus - UX Designer Profile</title>
+
+    <!-- Bootstrap Icons Only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="output.css" />
+</head>
+
+<body class="flex justify-center items-center w-full h-screen">
+    <div id="profile-card"
+        class="profile-card w-80 h-auto bg-white relative flex flex-col justify-center items-center rounded-3xl shadow-2xl hover:scale-110 transition duration-300"
+        aria-labelledby="profile-name">
+        <!-- Header / Profile Image -->
+        <header id="card-header"
+            class="card-header w-full h-[120px] relative flex justify-center items-center before:absolute before:content-[''] before:w-full before:h-full before:bg-[linear-gradient(65deg,#8b5cf6,#ec4899)] before:top-0 before:left-0 before:rounded-t-3xl">
+            <div
+                class="absolute -bottom-[45%] w-[100px] h-[100px] before:content-[''] before:absolute before:w-4 before:h-4 before:rounded-full before:bg-green-500 before:bottom-0 before:right-0 before:ring-2 before:ring-white hover:scale-110 transition duration-300">
+                <img src="images/profile-pic.jpg" alt="Stephen William G. De Jesus smiling" id="profile-image"
+                    class="w-full h-full object-cover rounded-full border-4 border-white" />
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div id="card-content"
+            class="card-content pt-16 px-6 pb-7 flex flex-col justify-center items-center gap-6 text-center">
+            <!-- Name and Role -->
+            <div class="profile-info flex flex-col justify-center items-center gap-1.5">
+                <h2 id="profile-name" class="profile-name text-xl font-bold text-gray-90">
+                    Stephen William G. De Jesus
+                </h2>
+                <p class="profile-role text-sm text-purple-700 font-medium">
+                    Senior UX Designer
+                </p>
+                <p class="profile-bio text-sm text-gray-600">
+                    Passionate about creating beautiful and intuitive digital
+                    experiences that make a difference.
+                </p>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="profile-stats" aria-label="Profile statistics">
+                <ul class="stats-list flex justify-center items-center gap-2">
+                    <li class="stats-item">
+                        <strong class="stats-number text-xl text-gray-900">127</strong>
+                        <span class="stats-label text-sm text-gray-600">Projects</span>
+                    </li>
+                    <li class="stats-item">
+                        <strong class="stats-number text-xl text-gray-900">2.4k</strong>
+                        <span class="stats-label text-sm text-gray-600">Followers</span>
+                    </li>
+                    <li class="stats-item">
+                        <strong class="stats-number text-xl text-gray-900">892</strong>
+                        <span class="stats-label text-sm text-gray-600">Following</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="profile-skills" aria-label="Skills">
+                <ul class="skills-list flex justify-center items-center gap-2">
+                    <li class="skills-item text-sm text-purple-800 px-3 py-0.5 bg-purple-200 rounded-2xl">
+                        UI/UX
+                    </li>
+                    <li class="skills-item text-sm text-blue-800 px-3 py-0.5 bg-blue-200 rounded-2xl">
+                        Figma
+                    </li>
+                    <li class="skills-item text-sm text-red-800 px-3 py-0.5 bg-red-200 rounded-2xl">
+                        Prototyping
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="profile-actions w-full flex justify-center items-center gap-4" aria-label="Profile actions">
+                <button id="follow-button"
+                    class="action-button follow-button w-[50%] flex justify-center items-center gap-2 border border-transparent py-3 px-4 rounded-xl bg-linear-65 from-purple-500 to-pink-500 font-medium text-sm cursor-pointer hover:shadow-lg transition"
+                    aria-label="Follow Stephen William G. De Jesus">
+                    <i class="bi bi-person-plus-fill text-white"></i>
+                    <span class="text-white">Follow</span>
+                </button>
+
+                <button id="message-button"
+                    class="action-button message-button w-[50%] flex justify-center items-center gap-2 border border-gray-300 py-3 px-4 rounded-xl bg-white text-sm font-medium text-gray-700 cursor-pointer hover:shadow-lg transition"
+                    aria-label="Send a message to Stephen William G. De Jesus">
+                    <i class="bi bi-envelope-fill"></i>
+                    <span>Message</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer / Social Links -->
+        <div id="card-footer" class="card-footer w-full border-t border-gray-200">
+            <ul class="social-links flex justify-center items-center gap-4 py-4 px-6"
+                aria-label="Social media profiles">
+                <li
+                    class="social-item rounded-[50%] text-lg w-10 h-10 flex justify-center items-center p-5 text-white font-bold bg-blue-500 cursor-pointer hover:bg-blue-600 hover:shadow-xl transition">
+                    <a href="#" class="social-link facebook-link" aria-label="Facebook profile">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li
+                    class="social-item rounded-[50%] text-lg w-10 h-10 flex justify-center items-center p-5 text-white font-bold bg-blue-400  cursor-pointer hover:bg-blue-500 hover:shadow-xl transition">
+                    <a href="#" class="social-link twitter-link" aria-label="Twitter profile">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li
+                    class="social-item rounded-[50%] text-lg w-10 h-10 flex justify-center items-center p-5 text-white font-bold bg-blue-800 cursor-pointer hover:bg-blue-900 hover:shadow-xl transition">
+                    <a href="#" class="social-link linkedin-link" aria-label="LinkedIn profile">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li
+                    class="ocial-item rounded-[50%] text-lg w-10 h-10 flex justify-center items-center p-5 text-white font-bold bg-pink-600
+                    before:absolute before:w-3 before:h-3 before:rounded-full before:bg-red-400 before:bottom-13 before:right-13 before:ring-1 before:ring-white before:animate-bounce cursor-pointer hover:bg-pink-700 hover:shadow-xl transition" aria-label="Instagram profile">
+                    <a href="#" class="social-link instagram-link">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
